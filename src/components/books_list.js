@@ -4,7 +4,7 @@ import BooksListItm from './books_list_item';
 
 const BooksList = ({books, emptyRes})=>{
     if(emptyRes){
-        return <div className="container text-left text-muted">Przykro nam nie mamy tej pozycji, spórbuj ponownie</div>;
+        return <div className="container text-center text-muted">Przykro nam nie mamy tej pozycji, spórbuj ponownie</div>;
     }
     let booksItems = books.map((book)=>{
         return <BooksListItm key={ book.cover } book={ book } />

@@ -18,6 +18,7 @@ body {
   color: $orangen;
   outline-color: $orangen;
   border-color: $orangen;
+  cursor: pointer;
   &:hover{
     outline-color: $redn ;
     border-color: $redn ;

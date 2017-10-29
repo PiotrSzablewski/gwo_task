@@ -5,13 +5,15 @@ class SearchBar extends Component{
 
     constructor(props){
         super(props);
-        this.state = { term: '' };
+        this.state = {
+            placeholder:'Wpisz szukany produkt...',
+            term: ''
+        };
 
     }
     render() {
         return(
         <div className="container ">
-            <h5>Wpisz szukany produkt:</h5>
             <Form inline className="searchComp">
                 <FormGroup className="col-md-12">
                     <Input onChange={event => this.setState({ term: event.target.value }) }
@@ -20,10 +22,14 @@ class SearchBar extends Component{
                                    event.preventDefault();
                                    this.handleButtonClick();
                                }}}
-                           ref="someName" value = {this.state.term}
-                           size="lg" className="col-md-9 searchInput"
-                           name="search" id="myForm"
-                           placeholder="wyszukaj...."/>
+                           onFocus = {()=>{this.setState({placeholder:''})}}
+                           onBlur = {()=>{this.setState({placeholder:'Wpisz szukany produkt...'})}}
+                           ref = "someName"
+                           value = {this.state.term}
+                           size ="lg"
+                           className = "col-md-9 searchInput"
+                           name = "search" id = "myForm"
+                           placeholder = {this.state.placeholder}/>
                     <a size="lg"
 
                             className=" col-md-2 btn btn-outline-warning btn-lg searchBtn"

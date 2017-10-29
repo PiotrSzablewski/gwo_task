@@ -12,7 +12,8 @@ body {
   margin-left: 10px;
   color: #F58220 !important;
   outline-color: #F58220 !important;
-  border-color: #F58220 !important; }
+  border-color: #F58220 !important;
+  cursor: pointer; }
   .searchBtn:hover {
     outline-color: #E31F27 !important;
     border-color: #E31F27 !important;
