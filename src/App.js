@@ -8,19 +8,25 @@ class App extends Component {
         super(props);
         this.state = {
             books : [],
-            emptyRes: false
+            emptyRes: false,
+            fetchingData:false
         };
     }
 
     booksSearch(term){
         let  url = encodeURI( `https://gwo.pl/booksApi/v1/search?query=${term}`);
+        this.setState({fetchingData:true})
         axios.get(url)
             .then( (response)=> {
                 if (!Array.isArray(response.data) || response.data.length === 0) {
-                    this.setState({ emptyRes:true });
+                    this.setState({
+                        fetchingData:false,
+                        emptyRes:true
+                    });
                 } else {
                     this.setState({
                         books:response.data,
+                        fetchingData:false,
                         emptyRes: false
                     });
                 }
@@ -35,7 +41,7 @@ class App extends Component {
                 </div>
                 <div className="container">
                     <SearchBar onSearchClick={term => this.booksSearch(term)} />
-                    <BooksList books={this.state.books} emptyRes={this.state.emptyRes} />
+                    <BooksList books={this.state.books} emptyRes={this.state.emptyRes} fetchingData={this.state.fetchingData} />
                 </div>
             </div>
         );

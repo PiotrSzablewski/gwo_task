@@ -16,7 +16,7 @@ class SearchBar extends Component{
         return(
         <div className="container ">
             <Form inline className="searchComp">
-                <FormGroup className="col-md-12">
+                <FormGroup className="col-md-12 ">
                     <Input onChange={event => this.setState({ term: event.target.value }) }
                            onKeyPress={event => {
                                if (event.key === "Enter") {

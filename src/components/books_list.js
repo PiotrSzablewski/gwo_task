@@ -1,8 +1,11 @@
 import React from 'react';
 import BooksListItm from './books_list_item';
+import LoadingSpinner from './loading_spinner'
 
-
-const BooksList = ({books, emptyRes})=>{
+const BooksList = ({books, emptyRes, fetchingData})=>{
+    if (fetchingData){
+        return <LoadingSpinner />
+    }
     if(emptyRes){
         return <div className="container text-center text-muted">Przykro nam nie mamy tej pozycji, spórbuj ponownie</div>;
     }
