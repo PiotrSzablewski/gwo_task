@@ -1,8 +1,8 @@
 import React from 'react';
 
 const LoadingSpinner = () => (
-    <div className="text-center" style={{marginTop:20 + 'px'}}>
-        <h4 className="text-muted"><i className="fa fa-spinner fa-spin" /> Loading...</h4>
+    <div className="d-flex justify-content-center" style={{marginTop:20 + 'px'}}>
+        <h6 className="text-muted"><div className="loader "></div> Loading...</h6>
     </div>
 );
 
