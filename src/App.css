@@ -1,0 +1,56 @@
+body {
+  font-family: Open Sans, sans-serif; }
+
+.imgLogo {
+  max-width: 384px;
+  max-height: 237px; }
+
+.logo {
+  margin-top: 20px; }
+
+.searchBtn {
+  margin-left: 10px;
+  color: #F58220 !important;
+  outline-color: #F58220 !important;
+  border-color: #F58220 !important; }
+  .searchBtn:hover {
+    outline-color: #E31F27 !important;
+    border-color: #E31F27 !important;
+    background-color: #E31F27 !important;
+    color: #FFFFFF !important; }
+  .searchBtn:focus {
+    color: #FFFFFF !important;
+    outline-color: #E31F27 !important;
+    border-color: #E31F27 !important; }
+  .searchBtn:active {
+    outline-color: #E31F27 !important;
+    border-color: #E31F27 !important; }
+
+.searchInput {
+  box-sizing: border-box;
+  width: 100%;
+  outline-color: #F58220 !important;
+  border-color: #F58220 !important; }
+  .searchInput:focus {
+    box-shadow: 5px 5px 5px #888888;
+    outline-color: #FDB913 !important;
+    border-color: #FDB913 !important; }
+
+.searchComp {
+  justify-content: center; }
+
+.images {
+  max-height: 376px; }
+
+.card-block {
+  padding: 5px; }
+
+.cards {
+  margin-bottom: 10px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.books-list {
+  margin-top: 15px; }

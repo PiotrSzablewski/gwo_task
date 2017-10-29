@@ -1,0 +1,69 @@
+
+$yellown : #FDB913 !important ;
+$orangen : #F58220 !important ;
+$redn : #E31F27 !important ;
+$whiten: #FFFFFF !important;
+body {
+  font-family: Open Sans, sans-serif;
+}
+.imgLogo{
+  max-width: 384px;
+  max-height: 237px;
+}
+.logo{
+  margin-top: 20px;
+}
+.searchBtn{
+  margin-left: 10px;
+  color: $orangen;
+  outline-color: $orangen;
+  border-color: $orangen;
+  &:hover{
+    outline-color: $redn ;
+    border-color: $redn ;
+    background-color: $redn;
+    color: $whiten;
+  }
+  &:focus{
+    color: $whiten;
+    outline-color: $redn ;
+    border-color: $redn ;
+  }
+  &:active{
+    outline-color: $redn ;
+    border-color: $redn ;
+  }
+}
+.searchInput{
+  box-sizing: border-box;
+  width: 100%;
+  outline-color: $orangen;
+  border-color: $orangen;
+  &:focus{
+    box-shadow: 5px 5px 5px #888888;
+    outline-color: $yellown ;
+    border-color: $yellown ;
+  }
+}
+.searchComp{
+  justify-content: center;
+}
+.images{
+
+  max-height: 376px;
+}
+.card-block{
+  padding: 5px;
+}
+.cards{
+  margin-bottom: 10px;
+
+}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.books-list{
+  margin-top: 15px;
+}
