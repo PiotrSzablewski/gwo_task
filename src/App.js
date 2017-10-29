@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import SearchBar from './components/search_bar';
 import axios from 'axios';
 import BooksList from './components/books_list';
@@ -15,7 +14,6 @@ class App extends Component {
 
     booksSearch(term){
         let  url = encodeURI( `https://gwo.pl/booksApi/v1/search?query=${term}`);
-        console.log(url);
         axios.get(url)
             .then( (response)=> {
                 if (!Array.isArray(response.data) || response.data.length === 0) {
@@ -25,10 +23,10 @@ class App extends Component {
                         books:response.data,
                         emptyRes: false
                     });
-                    console.log(response.data);
                 }
             });
     }
+
     render() {
         return (
             <div className="App container-fluid">

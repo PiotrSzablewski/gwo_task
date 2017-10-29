@@ -31,7 +31,6 @@ class SearchBar extends Component{
                            name = "search" id = "myForm"
                            placeholder = {this.state.placeholder}/>
                     <a size="lg"
-
                             className=" col-md-2 btn btn-outline-warning btn-lg searchBtn"
                             onClick={ this.handleButtonClick}>
                         Wyszukaj
@@ -45,8 +44,7 @@ class SearchBar extends Component{
 
     handleButtonClick = ()=>{
         this.props.onSearchClick(this.state.term);
-        console.log(this.state.term);
         this.setState({term:''});
     }
-};
+}
 export default  SearchBar;

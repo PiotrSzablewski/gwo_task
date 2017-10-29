@@ -2,7 +2,6 @@ import React from 'react';
 
 const BooksListItem = ({ book })=>{
 
-    console.log(book);
     return (
         <div className="col-md-3 cards">
             <div className="card  ">
@@ -11,7 +10,13 @@ const BooksListItem = ({ book })=>{
                     <h6 className="card-title">{book.title}</h6>
                     <small className="text-muted">{book.author}</small>
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><small className="text-muted">MEN :{book.men} <br/> ISBN: {book.isbn} <br/> stron: {book.pages_count} </small></li>
+                        <li className="list-group-item">
+                            <small className="text-muted">
+                                MEN :{book.men} <br/>
+                                ISBN: {book.isbn} <br/>
+                                stron: {book.pages_count}
+                            </small>
+                        </li>
                         <li className="list-group-item">
                             <small className="text-muted">poziom:{book.levels.map((level, index)=>{
                                return (
