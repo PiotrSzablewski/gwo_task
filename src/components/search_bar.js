@@ -7,7 +7,8 @@ class SearchBar extends Component{
         super(props);
         this.state = {
             placeholder:'Wpisz szukany produkt...',
-            term: ''
+            term: '',
+            emptyInput: false
         };
 
     }
@@ -38,11 +39,17 @@ class SearchBar extends Component{
 
                 </FormGroup>
             </Form>
+            <div className="container text-center text-muted" style={{display: this.state.emptyInput ? 'block' : 'none' }}>Musisz podać szukaną frazę!</div>
         </div>
         )
     }
 
     handleButtonClick = ()=>{
+        if(this.state.term === ''){
+            this.setState({emptyInput:true});
+            return
+        }
+        this.setState({emptyInput:false});
         this.props.onSearchClick(this.state.term);
         this.setState({term:''});
     }
