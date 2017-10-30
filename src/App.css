@@ -71,3 +71,18 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+@media only screen and (max-width: 33.9em) {
+  .searchBtn {
+    margin-left: 0px;
+    margin-top: 5px; } }
+
+@media only screen and (max-width: 47.9em) {
+  .searchBtn {
+    margin-left: 0px;
+    margin-top: 5px; } }
+
+@media (max-width: 61.9em) {
+  .searchBtn {
+    margin-left: 0px;
+    margin-top: 5px; } }

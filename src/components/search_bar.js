@@ -28,11 +28,11 @@ class SearchBar extends Component{
                            ref = "someName"
                            value = {this.state.term}
                            size ="lg"
-                           className = "col-md-9 searchInput"
+                           className = "col-sm-12 col-md-12 col-lg-9 searchInput"
                            name = "search" id = "myForm"
                            placeholder = {this.state.placeholder}/>
                     <a size="lg"
-                            className=" col-md-2 btn btn-outline-warning btn-lg searchBtn"
+                            className=" col-lg-2 btn btn-outline-warning btn-lg searchBtn"
                             onClick={ this.handleButtonClick}>
                         Wyszukaj
                     </a>
