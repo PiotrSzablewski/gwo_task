@@ -3,8 +3,8 @@ import React from 'react';
 const BooksListItem = ({ book })=>{
 
     return (
-        <div className="col-md-3 cards">
-            <div className="card  ">
+        <div className="col-md-3 cards d-flex align-items-lg-stretch">
+            <div className="card d-flex align-items-lg-stretch ">
                 <img src={book.cover} alt={book.title} className="card-img-top img-responsive" />
                 <div className="card-block">
                     <h6 className="card-title">{book.title}</h6>
@@ -31,7 +31,7 @@ const BooksListItem = ({ book })=>{
                     </ul>
 
                  </div>
-                <div className="card-footer">
+                <div className="card-footer align-self-end">
                     <a className="btn btn-sm btn-outline-warning" href={book.url} target="blank"><small>Więcej ></small></a>
                 </div>
             </div>

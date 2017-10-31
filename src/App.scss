@@ -76,6 +76,11 @@ body {
   height: 30px;
   animation: spin 2s linear infinite;
 }
+.card-footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -98,4 +103,7 @@ body {
     margin-left: 0px;
     margin-top: 5px;
   }
+}
+.card{
+  padding-bottom:50px;
 }

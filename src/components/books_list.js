@@ -14,7 +14,7 @@ const BooksList = ({books, emptyRes, fetchingData})=>{
     });
     return(
         <div className="card-deck-wrapper">
-            <div className="card-deck books-list">
+            <div className="card-deck books-list ">
                 { booksItems }
             </div>
         </div>
